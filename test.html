@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="new.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="img/dylan-nolte-SH_IjrKwG8c-unsplash.jpg" alt="1" />
+          <h1>Mike</h1>
+          <div class="details">
+            <h2>Mike</h2>
+            <p>web3 Developer</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Img/james-lee-YIy1cd3xN4w-unsplash.jpg" alt="2" />
+          <h1>samite</h1>
+          <div class="details">
+            <h2>samite</h2>
+            <p>wordpress Developer</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="img/luke-chesser-pJadQetzTkI-unsplash.jpg" alt="3" />
+          <h1>hashi</h1>
+          <div class="details">
+            <h2>hashi</h2>
+            <p>java Developer</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
